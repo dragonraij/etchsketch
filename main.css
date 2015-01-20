@@ -1,3 +1,33 @@
-h1{text-align: center;}
-h3{text-align: center;}
-p{text-align: center;}
+h1{text-align: center;
+	font-family: Verdana;
+	color: A43741;
+}
+h3{text-align: center;
+	color: 7B151E;
+}
+p{text-align: center;
+	color: 00352E;	
+	font-family: Verdana;
+}
+body{background-color: 246B61}
+
+#controls{
+	width: 500px;
+	height: 100px;
+	background-color: 6BA099;
+	margin: 0 auto;
+}
+
+#main{
+	width: 600px;
+	height: 600px;
+	background-color: white;
+	margin: 50px auto;
+}
+
+.blank{
+	width:30px;
+	height: 30px;
+	background-color: lightblue;
+	float: left;
+}
