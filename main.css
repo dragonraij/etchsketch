@@ -26,8 +26,21 @@ body{background-color: 246B61}
 }
 
 .blank{
-	width:30px;
-	height: 30px;
-	background-color: lightblue;
+	width:28px;
+	height: 28px;
+	
 	float: left;
+	border: 1px solid FFE1AA;
+}
+
+.selected{
+	width:28px;
+	height: 28px;
+	background-color: FFE1AA;
+	float: left;
+	border: 1px solid FFE1AA;
+}
+
+.blank:hover { 
+    background-color: yellow;
 }
