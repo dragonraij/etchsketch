@@ -19,13 +19,14 @@ body{background-color: 246B61}
 }
 
 #main{
-	width: 600px;
-	height: 600px;
+	width: 1000px;
+	height: 1000px;
 	background-color: white;
 	margin: 50px auto;
 }
 
-.blank{
+.cell{
+
 	width:28px;
 	height: 28px;
 	
@@ -33,31 +34,12 @@ body{background-color: 246B61}
 	border: 1px solid FFE1AA;
 }
 
+
 .selected{
-	width:28px;
-	height: 28px;
 	background-color: FFE1AA;
-	float: left;
-	border: 1px solid FFE1AA;
 }
 
 .blank:hover { 
     background-color: yellow;
 }
 
-a.toggler {
-    background: green;
-    cursor: pointer;
-    border: 2px solid black;
-    border-right-width: 15px;
-    padding: 0 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all .5s ease;
-}
-
-a.toggler.off {
-    background: red;
-    border-right-width: 2px;
-    border-left-width: 15px;
-}

@@ -4,25 +4,28 @@ $(document).ready(function (){
 	$("#newBtn").on("click", function(){
 		var size=prompt("Please select grid size","20");
 		newGrid(size);
-
-	   $('a.toggler').click(function(){
-        $(this).toggleClass('a.toggler.off');
-    });
-
 	});
-	
+
+	$("#erase").on("click", function(){
+		$(".cell").mouseenter(function(){
+		$(this).removeClass("selected");
+	})	;
+});
 });
 
 function newGrid(size){
 	$("#main").empty();
+	var length= (1000-(size*2))/size;
+	
 	for (var j = 1; j<= size; j++){
 		for (var i = 1; i <= size; i++) {
 			var id = "'"+i+"'";
-			$("#main").append("<div id="+id+" class='blank cell'></div>");
+			$("#main").append("<div id="+id+" class='cell'></div>");
 		};
 	};
+	$(".cell").css("height", length);
+	$(".cell").css("width", length);
 	$(".cell").mouseenter(function(){
-		$(this).removeClass("blank");
 		$(this).addClass("selected");
 	});
 
