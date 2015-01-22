@@ -43,3 +43,7 @@ body{background-color: 246B61}
     background-color: yellow;
 }
 
+button{
+	padding: 20px;
+	margin:20px;
+}
